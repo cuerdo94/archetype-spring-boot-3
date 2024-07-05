@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="archetypemvc-archetype"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>com.example</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>my-app</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="package">
+            <defaultValue>com.example.app</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet>
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*.properties</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+
+        <fileSet>
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+
+        <fileSet>
+            <directory>src/test/resources</directory>
+            <includes>
+                <include>**/*.properties</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>META-INF</directory>
+            <excludes>
+                <exclude>**/*</exclude>
+            </excludes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>.</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/java/diego/archetype/mvc/archetypemvc/models</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/java/diego/archetype/mvc/archetypemvc/controllers</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/java/diego/archetype/mvc/archetypemvc/repositories</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/java/diego/archetype/mvc/archetypemvc/configs</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
